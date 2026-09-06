@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
     background: #f7f2e8;
     color: #211b16;
     line-height: 1.6;
@@ -68,7 +68,7 @@ h2,
 h3,
 .logo,
 .footer-logo {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Poppins", sans-serif;
 }
 
 h1 {
@@ -112,11 +112,8 @@ h2 span {
 .top-bar {
     background: var(--dark);
     color: #d6ad69;
-
     text-align: center;
-
     font-size: .75rem;
-
     padding: 9px 15px;
 }
 
@@ -126,7 +123,7 @@ h2 span {
 ========================= */
 
 .header {
-    background: rgba(255, 250, 242, .97);
+    background: rgb(255, 250, 242);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -135,33 +132,21 @@ h2 span {
 
 .navbar {
     min-height: 70px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     position: relative;
 }
 
-.logo {
-    font-size: 1.35rem;
-    font-weight: bold;
-
-    display: flex;
-    align-items: center;
-    gap: 8px;
+.logo img {
+    width: 14rem;
 }
 
-.logo span {
-    color: var(--gold);
-}
 
 .menu-btn {
     border: 0;
     background: none;
-
     font-size: 1.7rem;
-
     cursor: pointer;
 }
 
@@ -182,7 +167,7 @@ h2 span {
 
     border: 1px solid var(--border);
 
-    box-shadow: 0 15px 30px rgba(0,0,0,.08);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .08);
 }
 
 .nav-links.show {
@@ -206,14 +191,13 @@ h2 span {
     min-height: 650px;
 
     background:
-        linear-gradient(
-            rgba(30,20,10,.35),
-            rgba(30,20,10,.35)
-        ),
-        url("images/hero.jpg");
+        linear-gradient(rgba(30, 20, 10, .35),
+            rgba(30, 20, 10, .35)),
+        url("images/hero4.PNG");
 
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 
     display: flex;
     align-items: center;
@@ -227,7 +211,7 @@ h2 span {
 .hero-text {
     width: 100%;
 
-    background: rgba(255, 250, 242, .88);
+    background: rgba(255, 250, 242, .5);
 
     padding: 30px 24px;
 
@@ -403,7 +387,7 @@ h2 span {
     transform: translateY(-5px);
 
     box-shadow:
-        0 15px 30px rgba(0,0,0,.08);
+        0 15px 30px rgba(0, 0, 0, .08);
 }
 
 .product-image {
@@ -479,11 +463,9 @@ h2 span {
 
 .scent-section {
     background:
-        linear-gradient(
-            135deg,
+        linear-gradient(135deg,
             #171511,
-            #2f291f
-        );
+            #2f291f);
 
     color: white;
 }
@@ -503,7 +485,7 @@ h2 span {
 
     overflow: hidden;
 
-    background: rgba(255,255,255,.03);
+    background: rgba(255, 255, 255, .03);
 }
 
 .scent-card img {
@@ -578,11 +560,9 @@ h2 span {
     padding: 50px 0;
 
     background:
-        linear-gradient(
-            135deg,
+        linear-gradient(135deg,
             #efe4d2,
-            #fffaf2
-        );
+            #fffaf2);
 }
 
 .promo-content {
@@ -727,7 +707,7 @@ h2 span {
 
     inset: 0;
 
-    background: rgba(0,0,0,.7);
+    background: rgba(0, 0, 0, .7);
 
     display: none;
 
@@ -814,7 +794,7 @@ h2 span {
 
     .hero-text {
         width: 65%;
-        padding: 45px;
+        padding: 30px;
     }
 
     .hero-buttons {
@@ -940,7 +920,7 @@ h2 span {
         border-radius: 18px;
 
         box-shadow:
-            0 15px 40px rgba(0,0,0,.08);
+            0 15px 40px rgba(0, 0, 0, .08);
     }
 
     .feature-grid {
