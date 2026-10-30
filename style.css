@@ -56,7 +56,11 @@ button {
    TYPOGRAPHY & UTILS
 ========================= */
 
-h1, h2, h3, .logo, .footer-logo {
+h1,
+h2,
+h3,
+.logo,
+.footer-logo {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
 }
@@ -73,7 +77,8 @@ h2 {
     color: var(--brand-purple);
 }
 
-h1 span, h2 span {
+h1 span,
+h2 span {
     color: var(--gold-accent);
 }
 
@@ -201,18 +206,19 @@ h1 span, h2 span {
 
 .hero {
     min-height: 80vh;
-    background: linear-gradient(135deg, rgba(37, 21, 64, 0.85), rgba(23, 13, 41, 0.85)), url("images/hero2.jpeg");
+    background: linear-gradient(135deg, rgba(37, 21, 64, 0.348), rgba(23, 13, 41, 0.85)), url("images/hero1.webp");
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     color: var(--white);
+    background-attachment: fixed;
 }
 
 .hero-text {
     max-width: 620px;
-    background: rgba(37, 21, 64, 0.4);
-    backdrop-filter: blur(12px);
+    background: rgb(37, 21, 64);
+    backdrop-filter: blur(2px);
     padding: 40px;
     border-radius: 20px;
     border: 1px solid rgba(248, 232, 203, 0.2);
@@ -336,7 +342,8 @@ h1 span, h2 span {
    PRODUCT SHOWCASE
 ========================= */
 
-.products, .perfume-section {
+.products,
+.perfume-section {
     background: #fdfaf5;
 }
 
@@ -507,13 +514,22 @@ h1 span, h2 span {
 ========================= */
 
 .refill-section {
-    background: #f4eee2;
+    /* background: #f4eee2; */
+    background: url(images/refill2.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* display: flex; */
+    justify-content: center;
+    /* align-items: center; */
+
 }
 
 .refill-card {
-    background: var(--brand-purple);
+    background: #251540cf;
+    font-weight: bolder;
     color: var(--white);
-    padding: 50px 30px;
+    padding: 30px 30px;
     border-radius: 20px;
     text-align: center;
 }
@@ -734,7 +750,9 @@ h1 span, h2 span {
     color: var(--brand-purple);
 }
 
-.form-group input, .form-group select, .form-group textarea {
+.form-group input,
+.form-group select,
+.form-group textarea {
     padding: 12px;
     border: 1.5px solid var(--border-light);
     border-radius: 8px;
@@ -744,7 +762,9 @@ h1 span, h2 span {
     background: #fdfaf5;
 }
 
-.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
     border-color: var(--brand-purple);
 }
 
@@ -756,7 +776,10 @@ h1 span, h2 span {
     margin: 18px 0;
     font-size: 0.88rem;
 
-    p { margin-bottom: 4px; color: var(--brand-purple); }
+    p {
+        margin-bottom: 4px;
+        color: var(--brand-purple);
+    }
 }
 
 .account-copy-row {
@@ -824,7 +847,8 @@ h1 span, h2 span {
     font-size: 1.05rem;
 }
 
-.footer p, .footer a {
+.footer p,
+.footer a {
     font-size: 0.88rem;
     margin-bottom: 10px;
     display: block;
@@ -847,20 +871,86 @@ h1 span, h2 span {
 ========================= */
 
 @media (min-width: 700px) {
-    h1 { font-size: 3.2rem; }
-    h2 { font-size: 2.4rem; }
 
-    .feature-grid { grid-template-columns: repeat(2, 1fr); }
-    .product-grid { grid-template-columns: repeat(2, 1fr); }
-    .scent-grid { grid-template-columns: repeat(2, 1fr); }
-    .footer-grid { grid-template-columns: repeat(2, 1fr); }
+    h1 {
+        font-size: 3.2rem;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    .hero {
+        min-height: 80vh;
+        background: linear-gradient(135deg, rgba(37, 21, 64, 0.348), rgba(23, 13, 41, 0.85)), url("images/hero2.webp");
+        background-size: cover;
+        background-position: right;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .scent-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (min-width: 1000px) {
-    .menu-btn { display: none; }
-    .nav-links { display: flex; position: static; background: transparent; padding: 0; box-shadow: none; flex-direction: row; }
-    .product-grid { grid-template-columns: repeat(3, 1fr); }
-    .scent-grid { grid-template-columns: repeat(3, 1fr); }
-    .feature-grid { grid-template-columns: repeat(4, 1fr); }
-    .footer-grid { grid-template-columns: 1.5fr 1fr 1fr 1fr; }
+    .menu-btn {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        position: static;
+        background: transparent;
+        padding: 0;
+        box-shadow: none;
+        flex-direction: row;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .scent-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    }
+}
+
+
+
+.perfume-slideshow {
+    position: relative;
+}
+
+.perfume-slideshow img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.perfume-slideshow img.active {
+    opacity: 1;
 }
